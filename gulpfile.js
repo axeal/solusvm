@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var mocha = require('gulp-mocha');
 var istanbul = require('gulp-istanbul');
+var coveralls = require('gulp-coveralls');
 var rimraf = require('rimraf');
 var _ = require('lodash');
 
@@ -62,3 +63,10 @@ gulp.task('watch', function() {
 });
 
 gulp.task('dev', ['watch', 'validate']);
+
+gulp.task('ci', ['validate', 'coveralls']);
+
+gulp.task('coveralls', function () {
+    return gulp.src('coverage/**/lcov.info')
+        .pipe(coveralls());
+});
