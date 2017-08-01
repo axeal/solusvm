@@ -1,0 +1,87 @@
+[
+  {
+    "scope": "http://example.com",
+    "method": "POST",
+    "path": "/api/admin/command.php",
+    "body": {
+      "id": "testid",
+      "key": "testkey",
+      "action": "client-checkexists",
+      "username": "user",
+      "rdtype": "json"
+    },
+    "status": 200,
+    "response": {
+      "status": "success",
+      "statusmsg": "Client exists"
+    }
+  },
+  {
+    "scope": "http://example.com",
+    "method": "POST",
+    "path": "/api/admin/command.php",
+    "body": {
+      "id": "testid",
+      "key": "testkey",
+      "action": "client-checkexists",
+      "username": "test",
+      "rdtype": "json"
+    },
+    "status": 200,
+    "response": {
+      "status": "success",
+      "statusmsg": "Client exists"
+    }
+  },
+  {
+    "scope": "http://example.com",
+    "method": "POST",
+    "path": "/api/admin/command.php",
+    "body": {
+      "id": "testid",
+      "key": "testkey",
+      "action": "client-checkexists",
+      "username": "invalid",
+      "rdtype": "json"
+    },
+    "status": 200,
+    "response": {
+      "status": "error",
+      "statusmsg": "Client does not exist"
+    }
+  },
+  {
+    "scope": "http://example.com",
+    "method": "POST",
+    "path": "/api/admin/command.php",
+    "body": {
+      "id": "testid",
+      "key": "testkey",
+      "action": "client-checkexists",
+      "username": "failed",
+      "rdtype": "json"
+    },
+    "status": 500,
+    "response": {
+      "status": "error",
+      "statusmsg": "Client does not exist"
+    }
+  },
+  {
+    "scope": "http://example.com",
+    "method": "POST",
+    "path": "/api/admin/command.php",
+    "body": {
+      "id": "testid",
+      "key": "testkey",
+      "action": "client-list",
+      "rdtype": "json"
+    },
+    "status": 200,
+    "response": {
+      "status": "success",
+      "statusmsg": "",
+      "clients": []
+    }
+  }
+]

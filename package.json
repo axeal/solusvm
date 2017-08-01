@@ -1,0 +1,37 @@
+{
+  "name": "solusvm",
+  "version": "1.0.0",
+  "description": "SolusVM Admin API client.",
+  "main": "lib/solusvm.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axeal/solusvm.git"
+  },
+  "author": "Alex Seymour (https://github.com/axeal)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/axeal/solusvm/issues"
+  },
+  "homepage": "https://github.com/axeal/solusvm#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "debug": "^2.6.8",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-mocha": "~3.0.1",
+    "lodash": "^4.17.4",
+    "mocha": "^3.4.2",
+    "nock": "^9.0.14",
+    "rimraf": "^2.6.1"
+  }
+}
