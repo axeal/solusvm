@@ -16,6 +16,9 @@
     "url": "https://github.com/axeal/solusvm/issues"
   },
   "homepage": "https://github.com/axeal/solusvm#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "bluebird": "^3.5.0",
     "debug": "^2.6.8",
