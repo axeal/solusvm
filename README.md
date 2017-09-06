@@ -9,11 +9,12 @@ A SolusVM Admin API Wrapper
 ## Installation 
 This module can be install via npm:
 ```text
-$ npm install --save solusvm```
+$ npm install --save solusvm
+```
 
 ## Usage
 
-The ```solusvm.call()``` method accepts three arguments:
+The `solusvm.call()` method accepts three arguments:
 1. The name of the SolusVM API action to call
 2. An object with the variables for the API call
 3. An optional callback function
@@ -47,4 +48,4 @@ solusvm.call('node-idlist', {
       console.log(data);
     }
   });
- ````
+ ```
