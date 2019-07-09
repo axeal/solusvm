@@ -4,7 +4,9 @@
   "description": "SolusVM Admin API client.",
   "main": "lib/solusvm.js",
   "scripts": {
-    "test": "./node_modules/.bin/gulp ci"
+    "test": "./node_modules/.bin/gulp ci",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,8 @@
     "debug": "^2.6.8",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
-    "util": "^0.10.3"
+    "util": "^0.10.3",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "chai": "^4.1.0",
@@ -38,5 +41,6 @@
     "nock": "^9.0.14",
     "rimraf": "^2.6.1",
     "run-sequence": "^2.1.0"
-  }
+  },
+  "snyk": true
 }
